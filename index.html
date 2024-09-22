@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Site</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+<h2>Todo App</h2>
+<div class="input-section">
+    <input type="text" placeholder="Add Todo..." id="task-input"/>
+    <input type="date" id="date-input"/>
+    <button id="add-button">Add</button>
+    <button id="edite-button">Edit</button>
+</div>
+<div class="todo-operator">
+    <div>
+        <button class="filter-todos" date-filter="all">All</button>
+        <button class="filter-todos" date-filter="pending">Pending</button>
+        <button class="filter-todos" date-filter="completed">Completed</button>
+    </div>
+    <button id="delete-all-button">Delete All</button>
+</div>
+<div class="container"></div>
+<div id="alert-message"></div>
+
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                   <th>Task</th> 
+                   <th>Date</th> 
+                   <th>Status</th> 
+                   <th>Actions</th> 
+                </tr>
+            </thead> </div>
+
+            <div>
+            <tbody>
+
+                <tr>
+                    <td>text</td>
+                    <td>date</td>
+                    <td>pending</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Do</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>text</td>
+                    <td>date</td>
+                    <td>pending</td>
+                    <td>
+                        <button>Edit</button>
+                        <button>Do</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
